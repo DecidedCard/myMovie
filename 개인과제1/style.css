@@ -10,7 +10,7 @@
   padding: 24px;
 }
 
-.top{
+.top {
   font-weight: bold;
   font-size: 16px;
 }
@@ -20,12 +20,12 @@
   color: red;
 }
 
-.bottom .overview{
+.bottom .overview {
   font-size: 12px;
   color: blue;
 }
 
-.bottom .vote_average{
+.bottom .vote_average {
   font-size: 12px;
   color: blue;
 }
