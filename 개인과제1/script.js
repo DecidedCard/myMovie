@@ -18,7 +18,6 @@ const url =
 fetch(url).then((response) =>
   response.json().then((data) => {
     let movie = data["results"];
-    console.log(movie);
     for (let i = 0; i < movie.length; i++) {
       const temp = document.createElement("div");
       temp.innerHTML = `
@@ -30,7 +29,6 @@ fetch(url).then((response) =>
     <div class="title">${movie[i].title}</div>
     <div class="overview">${movie[i].overview}</div>
     <div class="vote_average">${movie[i].vote_average}</div>
-    <span>${movie[i].id}</span>
   </div>
 </div>`;
 
@@ -41,4 +39,11 @@ fetch(url).then((response) =>
 
 function checkId(num) {
   alert("영화 id : " + num);
+}
+
+function serchMovie() {
+  let check = document.getElementsByClassName('title');
+  for (let i = 0; i < check.length; i++) {
+    console.log(check[i]);
+  }
 }
