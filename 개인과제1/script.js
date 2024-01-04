@@ -42,8 +42,16 @@ function checkId(num) {
 }
 
 function serchMovie() {
-  let check = document.getElementsByClassName('title');
-  for (let i = 0; i < check.length; i++) {
-    console.log(check[i]);
+  let str = document.getElementById('info').value;
+  console.log(str);
+  let checkCard = document.getElementsByClassName('container');
+  let checkTitle = document.getElementsByClassName('title');
+  for (let i = 0; i < checkCard.length; i++) {
+    let a = checkTitle[i].innerHTML
+      for (let p = 0; p < str.length; p++) {
+        if (str[p].toUppesCase().includes(a.toUpperCase())){
+          console.log('성공');
+        }
+      }
   }
 }
