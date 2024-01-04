@@ -30,7 +30,7 @@
   color: blue;
 }
 
-.wrap {
+.card {
   display: flex;
   flex-direction: row;
 }

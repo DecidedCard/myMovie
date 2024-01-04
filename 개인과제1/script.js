@@ -22,12 +22,15 @@ fetch(url).then((response) =>
     for (let i = 0; i < movie.length; i++) {
       const temp = document.createElement("div");
       temp.innerHTML = `
-  <div class="container">
-  <div class="top"><img src="https://image.tmdb.org/t/p/w200${movie[i].poster_path}"></div>
+  <div id="container" class="container" onclick = "checkId(${movie[i].id})">
+<div class="top">
+<img id = "image" src="https://image.tmdb.org/t/p/w200${movie[i].poster_path}">
+  </div>
   <div class="bottom">
     <div class="title">${movie[i].title}</div>
     <div class="overview">${movie[i].overview}</div>
     <div class="vote_average">${movie[i].vote_average}</div>
+    <span>${movie[i].id}</span>
   </div>
 </div>`;
 
@@ -35,3 +38,7 @@ fetch(url).then((response) =>
     }
   })
 );
+
+function checkId(num) {
+  alert("영화 id : " + num);
+}
