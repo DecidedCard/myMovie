@@ -1,13 +1,52 @@
+body {
+  background-color: #fffefb;;
+}
+
+.movieChart {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  color: #1d1c1c;
+  background-color: #cccbc8;
+}
+
+.serch {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f5f4f1;
+}
+
+.info{
+  width: 550px;
+  height: 30px;
+  border: 3px solid black;
+  font-size: medium;
+  background-color: #d4eaf7;
+}
+
+.serchBtn{
+  font-size: medium;
+  background-color: #b6ccd8;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 200px;
-  gap: 24px;
+  gap: 20px;
   border: 1px solid black;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
   padding: 24px;
+  background-color: #d4eaf7;
 }
 
 .top {
@@ -17,20 +56,15 @@
 
 .bottom .title {
   font-size: 13px;
-  color: red;
+  color: #313d44;
 }
 
 .bottom .overview {
   font-size: 12px;
-  color: blue;
+  color: #313d44;
 }
 
 .bottom .vote_average {
   font-size: 12px;
-  color: blue;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
+  color: #313d44;
 }
