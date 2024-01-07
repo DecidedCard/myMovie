@@ -1,6 +1,9 @@
 body {
   background-color: #fffefb;;
 }
+span {
+  font-weight: bold;
+}
 
 .movieChart {
   display: flex;
@@ -23,11 +26,14 @@ body {
   border: 3px solid black;
   font-size: medium;
   background-color: #d4eaf7;
+  border-radius: 7px;
 }
 
 .serchBtn{
   font-size: medium;
   background-color: #b6ccd8;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .card {
@@ -55,7 +61,7 @@ body {
 }
 
 .bottom .title {
-  font-size: 13px;
+  font-size: 16px;
   color: #313d44;
 }
 
@@ -65,6 +71,6 @@ body {
 }
 
 .bottom .vote_average {
-  font-size: 12px;
+  font-size: 14px;
   color: #313d44;
 }
