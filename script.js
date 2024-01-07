@@ -20,8 +20,8 @@ fetch(url, options).then((response) =>
 <img id = "image" src="https://image.tmdb.org/t/p/w200${movie[i].poster_path}" onclick = "checkId(${movie[i].id})">
   </div>
   <div class="bottom">
-    <div class="title"><span>영화제목</span>: <br>${movie[i].title}</div>
-    <div class="overview"><span>내용</span>: ${movie[i].overview}</div>
+    <div class="title"><span>영화제목</span>: <br>${movie[i].title}</div><br>
+    <div class="overview"><span>내용</span>: ${movie[i].overview}</div><br>
     <div class="vote_average"><span>별점</span>: ${movie[i].vote_average}</div>
   </div>
 </div>`;
