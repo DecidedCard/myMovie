@@ -17,7 +17,7 @@ fetch(url, options).then((response) =>
       temp.innerHTML = `
   <div id="container" class="container" >
 <div class="top">
-<img id = "image" src="https://image.tmdb.org/t/p/w200${movie[i].poster_path}" onclick = "checkId(${movie[i].id})">
+<img id = "image" class = "image" src="https://image.tmdb.org/t/p/w200${movie[i].poster_path}" onclick = "checkId(${movie[i].id})">
   </div>
   <div class="bottom">
     <div class="title"><span>영화제목</span>: <br>${movie[i].title}</div><br>
