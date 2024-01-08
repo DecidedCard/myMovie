@@ -32,8 +32,8 @@
 }
 
 .container {
-  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 body {
@@ -81,7 +81,7 @@ span {
 .card {
   margin-top: 15px;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 

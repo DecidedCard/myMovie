@@ -35,7 +35,7 @@ fetch(url, options).then((response) =>
 fetch(url, options).catch((err) => console.error(err));
 
 //검색기능
-function serchMovie() {
+const serserchMovie = () => {
   const str = document.querySelector(".info").value;
   const checkTitle = document.querySelectorAll(".title");
   for (let i = 0; i < checkTitle.length; i++) {
@@ -47,4 +47,4 @@ function serchMovie() {
     }
   }
   event.preventDefault();
-}
+};
