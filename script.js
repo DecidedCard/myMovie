@@ -11,6 +11,7 @@ const url =
 
 fetch(url, options).then((response) =>
   response.json().then((data) => {
+    // 데이터를 받아서 카드로 HTML로 붙이게 만듬.
     let movie = data["results"];
     for (let i = 0; i < movie.length; i++) {
       const temp = document.createElement("div");
@@ -31,10 +32,12 @@ fetch(url, options).then((response) =>
   })
 );
 
+// 이미지를 클릭했을때 영와 id가 alert창으로 뜨게 구현, 영화 id값을 함수 매개변수로 넣었음.
 function checkId(num) {
   alert("영화 id : " + num);
 }
 
+// 검색기능
 function serchMovie() {
   let str = document.getElementById("info").value;
   let checkCard = document.getElementsByClassName("container");
