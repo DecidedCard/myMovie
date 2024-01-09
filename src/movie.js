@@ -7,9 +7,9 @@ export const drawMovieList = async () => {
       (movie) => `
     <li id="container" class="container" >
     <img 
-    id = "${movie.id}" 
+    id = "${movie.id}"
     class = "image" 
-    src="https://image.tmdb.org/t/p/w200${movie.poster_path}">
+    src="https://image.tmdb.org/t/p/w300${movie.poster_path}">
     <h2 class="movieTitle">영화 제목</h2>
       <p class="title"> ${movie.title}</p><br>
       <p class="overview"><span>내용</span>: ${movie.overview}</p><br>
